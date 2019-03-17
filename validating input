@@ -1,0 +1,28 @@
+Validating Input - Instructions
+
+Add
+
+import validators
+
+to the list of imports at the top of the file.
+
+Add a new parser call
+
+parser.add_argument('url', type=str, help="The URL of the HTML to analyze")
+Add this at the bottom
+
+url = args.url
+ 
+if(validators.url(url)):
+  print('That was a good URL')
+else:
+  print('That one wasn\'t so good')
+
+
+Run this with
+
+./ahilles.py hello.io
+
+and
+
+./achilles.py http://hello.io
