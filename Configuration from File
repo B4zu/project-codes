@@ -1,0 +1,14 @@
+Configuration from File -Instructions
+
+Add this to the parser arguments
+
+parser.add_argument('--config', help='Path to configuration file')
+
+and this below
+
+args = parser.parse_args()
+
+if(args.config):
+  print('Using config file: ' + args.config)
+  config_file = open(args.config, 'r')
+  
