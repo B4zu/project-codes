@@ -1,0 +1,29 @@
+Basic Python Script Instructions
+
+Note: i am assuming you have installed Version 3.6+ of Python with the name of the executable being python3 and that you are running on a Unix/Linux compatible system.
+
+Check for version of Python with
+
+python3 -V
+
+Create a new directory and enter it
+
+mkdir achilles
+cd achilles
+Create a new file called achilles.py in this directory
+
+Add this to it
+
+#!/usr/bin/env python3
+print('hello')
+On the command line, run
+
+chmod a+x achilles.py
+
+Now run the tool, using
+
+./achilles.py
+
+It should print
+
+hello
