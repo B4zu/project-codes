@@ -1,0 +1,14 @@
+Checking Inputs -  Instructions
+Section 3, Lecture 79
+Add this to the other parsing statements
+
+password_inputs = parsed_html.find_all('input', { 'name' : 'password'})
+
+and this to the checks
+
+
+for password_input in password_inputs:
+      if(password_input.get('type') != 'password'):
+        report += 'Input Issue: Plaintext password input found. Please change to password type input\n'
+Questions
+Search f
