@@ -1,0 +1,12 @@
+Checking Comments -  Instructions
+
+Add this below the forms parse statement
+
+comments = parsed_html.find_all(string=lambda text:isinstance(text,Comment))
+
+and this under the form check
+
+ for comment in comments:
+      
+      if(comment.find('key: ') > -1):
+        report += 'Comment Issue: Key is found in the HTML comments, please remove\n'
