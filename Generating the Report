@@ -1,0 +1,18 @@
+Generating the Report -Instructions
+
+Add a line above the url declaration so it looks this way
+
+report = ''
+url = args.url
+
+Change the forms part so it looks like this
+
+
+for form in forms:
+
+      if((form.get('action').find('https') < 0) and (urlparse(url).scheme != 'https')):
+        report += 'Form Issue: Insecure form action ' + form.get('action') + ' found in document\n'
+
+print(report)
+
+Run the script test command and check the output
