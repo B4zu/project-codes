@@ -1,0 +1,12 @@
+Merging the Configs - Instructions
+
+Change the config input block to this
+
+config = {'forms': True, 'comments': True, 'passwords': True}
+ 
+if(args.config):
+  print('Using config file: ' + args.config)
+  config_file = open(args.config, 'r')
+  config_from_file = yaml.load(config_file)
+  if(config_from_file):
+    config = { **config, **config_from_file }
