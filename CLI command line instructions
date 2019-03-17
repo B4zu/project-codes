@@ -1,0 +1,18 @@
+Command Line Arguments - Instructions
+
+Add this to your file after the first line
+
+import sys
+print('The arguments are')
+print(sys.argv)
+You can remove the print statement with hello in it.
+
+Call the script without any arguments
+
+./achilles.py
+
+Call the script with arguments
+
+./achilles.py foo bar
+
+Notice the changes in the output.
