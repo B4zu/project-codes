@@ -1,0 +1,14 @@
+Improving the Report -Instructions
+
+Instead of
+
+print(report)
+
+add this section in the code
+
+if(report == ''):
+  print('Nice job! Your HTML document is secure!')
+else:
+  print('Vulnerability Report is as follows:\n')
+  print('==================================\n\n')
+  print(report)
