@@ -1,0 +1,33 @@
+Installing Python Locally
+
+For this section, we will be developing with Python locally, so we will need to install it on a development environment. This just means that we will be running the code outside a REPL, but you can actually use a cloud IDE/online IDE if you don't want to use your local computer as a development environment.
+
+Here is a list of documentation and options for installing Python
+
+Mac OSX
+
+https://docs.python.org/3.7/using/mac.html
+
+Alternative, using Homebrew
+
+https://docs.brew.sh/Homebrew-and-Python
+
+
+
+Linux/Unix
+
+https://docs.python.org/3.7/using/unix.html
+
+
+
+Windows
+
+https://docs.python.org/3.7/using/windows.html
+
+
+
+Cloud
+
+Codeanywhere: http://docs.codeanywhere.com/quicktutorial.html
+
+Cloud9IDE: https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-python.html (AWS account required)
