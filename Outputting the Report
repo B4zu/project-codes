@@ -1,0 +1,39 @@
+Outputting the Report -Instructions
+
+Add the following to the argument parsing statements
+
+parser.add_argument('-o', '--output', help='Report file output path')
+
+Change the report generation portion to
+
+if(report == ''):
+  report += 'Nice job! Your HTML document is secure!\n'
+else:
+  header =  'Vulnerability Report is as follows:\n'
+  header += '==================================\n\n'
+ 
+  report = header + report
+ 
+print(report)
+ 
+if(args.output):
+  f = open(args.output, 'w')
+  f.write(report)
+  f.close
+  print('Report saved to: ' + args.output)
+Try it out using
+
+./achilles.py localhost:8000 -o report.txt
+
+and then look through the report with
+
+cat report.txt
+
+
+
+Try it out with a different URL that should have no security issues for our tool to detect
+
+./achilles.py YOUR_URL_HERE -o repor.txt
+
+
+
