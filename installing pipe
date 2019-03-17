@@ -1,0 +1,21 @@
+Introduction to Pip - Instructions
+
+Pip installation instructions: https://pip.pypa.io/en/stable/installing/
+
+Usage:
+
+if installed as pip
+
+pip isntall foo
+
+or
+
+sudo pip install foo
+
+if installed as pip3
+
+pip3 install foo
+
+or
+
+sudo pip3 install foo
