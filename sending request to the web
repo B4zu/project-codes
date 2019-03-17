@@ -1,0 +1,18 @@
+Sending Requests to the Web -Instruction
+Add
+
+import requests
+
+to the top of the file below the shebang.
+
+Change the if statement so that the first part looks like this
+
+if(validators.url(url)):
+  result_html = requests.get(url).text
+  print(result_html)
+else:
+  print('Invalud URL. Please include full URL including scheme.')
+Call the script with a valid URL
+
+
+./achilles.py <YOUR_URL_HERE>
