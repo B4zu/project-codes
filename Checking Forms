@@ -1,0 +1,24 @@
+Checking Forms -Instructions
+Section 3, Lecture 73
+Add
+
+from urllib.parse import urlparse
+
+to the imports list
+
+Below
+
+forms  = parsed_html.find_all('form')
+
+add
+
+for form in forms:
+      if((form.get('action').find('https') < 0) and (urlparse(url).scheme != 'https')):
+        form_is_secure = False
+        print(form_is_secure)
+Run your pip install command
+
+Run your script test command
+
+
+./achilles.py http://localhost:8000
