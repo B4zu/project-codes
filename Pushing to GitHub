@@ -1,0 +1,15 @@
+Pushing to GitHub -Instructions
+Section 3, Lecture 91
+Sign up for an account on GitHub
+
+https://github.com/join
+
+Create a new repository.
+
+In your project directory run
+
+git init
+git add -A
+git commit -m "Initial commit"
+git add remote origin <YOUR_GIT_URL>
+git push origin master
