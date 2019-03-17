@@ -1,0 +1,46 @@
+Parsing Results -Instructions
+
+Save this as index.html locally
+
+<html>
+<head>
+  <title>Example</title>
+  <!-- key: 421523eof56 -->
+</head>
+<body>
+  <h1>Hi!</h1>
+ 
+    <form action="/post.php" >
+      Usernme  <input type="text" name="username" />
+      Password <input type="text" name="password" />
+    </form>
+</body>
+</html>
+Start a local Python http server with the command
+
+python3 -m http.server
+
+Call the URL with the achilles tool
+
+./achilles.py http://localhost:8000
+
+
+
+Add
+
+from bs4 import BeautifulSoup
+from bs4 import Comment
+to the list of imports.
+
+Change the if statement so it looks like this
+
+if(validators.url(url)):
+  result_html = requests.get(url).text
+  parsed_html = BeautifulSoup(result_html, 'html.parser')
+  forms           = parsed_html.find_all('form')
+Run your pip install command
+
+Run
+
+./achilles.py http://localhost:8000
+
